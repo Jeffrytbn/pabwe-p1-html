@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>Form Pendaftaran</title>
+</head>
+<body bgcolor="#ffffff">
+
+  <!-- Header -->
+  <table width="100%" cellspacing="0" cellpadding="20" bgcolor="#e6e6ff">
+    <tr>
+      <td align="center">
+        <h1>Form Pendaftaran</h1>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Navigasi -->
+  <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#dddddd">
+    <tr>
+      <td align="center">
+        <a href="Blog.html">Blog</a> |
+        <a href="DetailBlog.html">Detail Blog</a> |
+        <a href="FormPendaftaran.html">Form Pendaftaran</a> |
+        <a href="Tabel.html">Tabel Perolehan Nilai</a> |
+        <a href="CV.html">CV</a>
+      </td>
+    </tr>
+  </table>
+  <hr>
+
+  <!-- Form -->
+  <form method="get" action="#">
+    <table  border="0" cellspacing="5" cellpadding="5" width="70%">
+      <!-- Nama Lengkap -->
+      <tr>
+        <td><label for="nama">Nama Lengkap</label></td>
+        <td><input id="nama" name="nama" type="text" placeholder="Nama sesuai KTP" required></td>
+      </tr>
+
+      <!-- Jenis Kelamin -->
+      <tr>
+        <td valign="top">Jenis Kelamin</td>
+        <td>
+          <input type="radio" name="jk" value="Laki-laki" required> Laki-laki<br>
+          <input type="radio" name="jk" value="Perempuan"> Perempuan
+        </td>
+      </tr>
+
+      <!-- Tempat Lahir -->
+      <tr>
+        <td><label for="tempat">Tempat Lahir</label></td>
+        <td><input id="tempat" name="tempat" type="text" required></td>
+      </tr>
+
+      <!-- Tanggal Lahir -->
+      <tr>
+        <td><label for="tanggal">Tanggal Lahir</label></td>
+        <td><input id="tanggal" name="tanggal" type="date" required></td>
+      </tr>
+
+      <!-- Hobi -->
+      <tr>
+        <td valign="top">Hobi</td>
+        <td>
+          <input type="checkbox" name="hobi" value="Membaca"> Membaca<br>
+          <input type="checkbox" name="hobi" value="Olahraga"> Olahraga<br>
+          <input type="checkbox" name="hobi" value="Musik"> Musik<br>
+          <input type="checkbox" name="hobi" value="Traveling"> Traveling
+        </td>
+      </tr>
+
+      <!-- Password -->
+      <tr>
+        <td><label for="password">Password</label></td>
+        <td><input id="password" name="password" type="password" required></td>
+      </tr>
+
+      <!-- Persetujuan -->
+      <tr>
+        <td colspan="2">
+          <input type="checkbox" name="setuju" required> Saya menyetujui ketentuan pendaftaran.
+        </td>
+      </tr>
+
+      <!-- Tombol -->
+      <tr>
+        <td colspan="2" align="center">
+          <input type="reset" value="Reset">
+          <input type="submit" value="Submit">
+        </td>
+      </tr>
+    </table>
+  </form>
+
+  <!-- Footer -->
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+
+  <hr>
+  <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#f2f2f2">
+    <tr>
+      <td align="center">&copy; 2025 Form Pendaftaran</td>
+    </tr>
+  </table>
+
+</body>
+</html>

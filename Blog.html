@@ -1,59 +1,128 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="id">
 <head>
   <meta charset="utf-8">
-  <title>Blog — Daftar Post</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog Saya</title>
 </head>
-<body>
-<header>
-  <h1>Blog Sederhana</h1>
-  <nav aria-label="Navigasi utama">
-    <a href="index.html">Blog</a> |
-    <a href="blog-detail.html">Detail Blog</a> |
-    <a href="form-pendaftaran.html">Form Pendaftaran</a> |
-    <a href="labels.html">Label</a> |
-    <a href="kontak.html">Kontak</a>
-  </nav>
-  <hr>
-</header>
+<body bgcolor="#ffffff">
 
-<main>
-  <article>
-    <img src="https://via.placeholder.com/800x300?text=Gambar+Cover+Post+1" alt="Gambar blog 1" width="800" height="300">
-    <h2><a href="blog-detail.html">Mengenal HTML Dasar</a></h2>
-    <p>
-      <img src="https://via.placeholder.com/40" alt="Foto author" width="40" height="40">
-      <strong>Oleh:</strong> Andi Nugraha
-      • <time datetime="2025-08-20">20 Agustus 2025</time>
-    </p>
-    <p>
-      <strong>Label:</strong>
-      <a href="labels.html">HTML</a>,
-      <a href="labels.html">Dasar</a>,
-      <a href="labels.html">Web</a>
-    </p>
-  </article>
-  <hr>
-  <article>
-    <img src="https://via.placeholder.com/800x300?text=Gambar+Cover+Post+2" alt="Gambar blog 2" width="800" height="300">
-    <h2><a href="blog-detail.html">Struktur Halaman Web</a></h2>
-    <p>
-      <img src="https://via.placeholder.com/40" alt="Foto author" width="40" height="40">
-      <strong>Oleh:</strong> Siti Marlina
-      • <time datetime="2025-08-12">12 Agustus 2025</time>
-    </p>
-    <p>
-      <strong>Label:</strong>
-      <a href="labels.html">Struktur</a>,
-      <a href="labels.html">Semantik</a>
-    </p>
-  </article>
-</main>
+  <!-- Header (pakai tabel agar bisa diberi warna tanpa CSS) -->
+  <table width="100%" cellspacing="0" cellpadding="20" bgcolor="#e6e6ff">
+    <tr>
+      <td align="center">
+        <h1>Selamat Datang di Blog Saya</h1>
+      </td>
+    </tr>
+  </table>
 
-<footer>
-  <hr>
-  <p>&copy; 2025 Blog Sederhana</p>
-</footer>
+  <!-- Navigasi sederhana -->
+  <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#f2f2f2">
+    <tr>
+      <td align="center">
+         <a href="Blog.html">Blog</a> |
+      <a href="DetailBlog.html">Detail Blog</a> |
+      <a href="FormPendaftaran.html">Form Pendaftaran</a> |
+      <a href="Tabel.html">Tabel Perolehan Nilai</a> |
+      <a href="CV.html">CV</a>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Spasi kecil -->
+  <br>
+
+<!-- Artikel Utama (gambar + konten) -->
+<table width="95%" align="center" border="0" cellspacing="0" cellpadding="10" height="250">
+  <tr>
+    <!-- Gambar artikel -->
+    <td width="320" valign="top" height="250">
+      <!-- Ganti path gambar sesuai punyamu -->
+      <img src="img/123123.png" alt="Gambar artikel" width="100%" height="100%">
+    </td>
+
+      <!-- Konten artikel -->
+      <td valign="top">
+       
+
+        <!-- Informasi penulis dan tanggal -->
+        <table border="0" cellspacing="0" cellpadding="5">
+      
+        </table>
+
+        <p>
+  HTML (HyperText Markup Language) adalah bahasa standar yang digunakan untuk membuat dan
+  menyusun halaman web. Dengan HTML, kita bisa menentukan struktur dasar sebuah website,
+  mulai dari judul, paragraf, tabel, gambar, tautan, hingga formulir yang dapat diisi
+  oleh pengguna. HTML sendiri bukanlah bahasa pemrograman, melainkan bahasa markup
+  yang berfungsi untuk memberi tanda pada teks agar dapat ditampilkan dengan format tertentu di browser.
+</p>
+<p>
+  Setiap elemen HTML ditulis menggunakan tag, misalnya <b>&lt;p&gt;</b> untuk paragraf,
+  <b>&lt;h1&gt;</b> sampai <b>&lt;h6&gt;</b> untuk judul, serta <b>&lt;table&gt;</b>
+  untuk membuat tabel. Tag-tag ini biasanya memiliki pasangan, yakni tag pembuka dan tag penutup.
+  Selain itu, HTML juga mendukung atribut seperti <b>src</b> pada gambar atau <b>href</b> pada tautan,
+  yang digunakan untuk memberikan informasi tambahan pada elemen.
+</p>
+<p>
+  Saat ini, HTML sudah berkembang menjadi HTML5 yang menyediakan banyak fitur baru seperti
+  dukungan audio, video, dan elemen semantik yang membuat struktur dokumen lebih jelas.
+  Dengan HTML5, pembuatan website menjadi lebih mudah dan interaktif tanpa selalu bergantung
+  pada plugin eksternal.
+</p>
+<p>
+  Kesimpulannya, memahami HTML adalah langkah awal yang sangat penting bagi siapa pun
+  yang ingin mempelajari dunia web development. Dengan penguasaan dasar HTML,
+  kita bisa melanjutkan ke teknologi lain seperti CSS untuk mengatur tampilan
+  dan JavaScript untuk menambahkan interaktivitas.
+</p>
+
+
+    
+  
+       
+  </table>
+
+  <!-- Garis pemisah -->
+  <hr width="95%">
+
+  <!-- Artikel Kedua (contoh lain) -->
+<table width="95%" align="center" border="0" cellspacing="0" cellpadding="3" height="120">
+  <tr>
+    <!-- Gambar artikel -->
+    <td width="50" valign="top" height="120">
+      <!-- Ganti path gambar sesuai punyamu -->
+      <img src="img/Foto ganteng.jpg" alt="Gambar Artikel" width="100" height="100%">
+    </td>
+
+    <!-- Konten artikel -->
+    <td valign="top"> 
+      <!-- Informasi penulis dan tanggal -->
+      <table border="0" cellspacing="0" cellpadding="3">
+        <tr>
+          <td valign="middle">
+            <font size="2">
+              <strong>Author: Jeffry Tambunan </strong><br>
+              <strong>Tanggal:</strong> 4 September 2025
+            </font>
+          </td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+
+
+  <!-- Footer -->
+  <br>
+  <table width="100%" cellspacing="0" cellpadding="15" bgcolor="#f2f2f2">
+    <tr>
+      <td align="center">
+        &copy; 2025 Blog Saya.
+      </td>
+    </tr>
+  </table>
+
 </body>
 </html>
