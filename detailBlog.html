@@ -1,114 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <title>Detail Blog — Mengenal HTML Dasar</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Detail Blog</title>
 </head>
-<body>
-<header style="background-color: lightblue; padding: 20px; text-align: center;">
-  <h1>Detail Blog</h1>
+<body bgcolor="#ffffff">
 
-  <!-- Navigasi -->
-    <nav style="background-color: #ddd; padding: 10px; text-align: center;">
-      <a href="Blog.html">Blog</a> |
-      <a href="DetailBlog.html">Detail Blog</a> |
-      <a href="FormPendaftaran.html">Form Pendaftaran</a> |
-      <a href="Tabel.html">Tabel Perolehan Nilai</a> |
-      <a href="CV.html">CV</a>
-    </nav>
+  <!-- Header -->
+  <table width="100%" cellpadding="20" bgcolor="#e6e6ff">
+    <tr>
+      <td align="center">
+        <h1>Detail Blog</h1>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Navigasi khusus: kembali ke Blog -->
+  <table width="100%" cellpadding="10" bgcolor="#f2f2f2">
+    <tr>
+      <td align="center">
+        <a href="Blog.html">Kembali ke Blog</a>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Konten Blog -->
+  <table width="80%" align="center" cellspacing="0" cellpadding="10" border="0">
+    <tr>
+      <td align="center">
+        <!-- Cover -->
+        <img src="img/cover1.png" width="400" height="200" alt="Cover Blog">
+        
+        <!-- Judul -->
+        <h2>Belajar HTML Dasar</h2>
+        
+        <!-- Author + Foto + Tanggal -->
+        <p>
+          <b>Author:</b> Jeffry Tambunan <br>
+          <img src="img/foto CV.jpg" width="100" height="100" alt="Foto Author"> <br>
+          <b>Tanggal:</b> 5 September 2025
+        </p>
+
+        <!-- Label -->
+        <p><b>Label:</b> HTML, Pemrograman Web, Dasar</p>
+
+        
+      </td>
+    </tr>
+  </table>
+
+  <!-- Form Komentar -->
+  <h3 align="center">Tulis Komentar</h3>
+  <form align="center">
+    <p>Nama: <input type="text" name="nama"></p>
+    <p>Komentar:<br>
+       <textarea name="komentar" rows="4" cols="40"></textarea>
+    </p>
+    <p><input type="submit" value="Kirim"></p>
+  </form>
+
+  <!-- Daftar Komentar -->
+  <h3 align="center">Komentar</h3>
+  <table width="70%" align="center" border="1" cellspacing="0" cellpadding="10">
+    <tr>
+      <td width="60" align="center"><img src="img/Poto ultraman.jpg" width="50" height="50"></td>
+      <td><b>Andi:</b><br>Sangat membantu untuk pemula, terima kasih!</td>
+    </tr>
+    <tr>
+      <td align="center"><img src="img/SPIDEY" width="50" height="50"></td>
+      <td><b>Budi:</b><br>Penjelasan mudah dipahami, lanjutkan!</td>
+    </tr>
+  </table>
+
+  <!-- Footer -->
   <hr>
-</header>
+  <p align="center">&copy; 2025 Blog Saya</p>
 
-<main>
-  <section aria-label="Cover">
-    <img src="https://via.placeholder.com/1000x360?text=Cover+Blog" alt="Cover blog" width="1000" height="360">
-  </section>
-
-  <article>
-    <header>
-      <h2>Mengenal HTML Dasar</h2>
-      <p>
-        <img src="https://via.placeholder.com/48" alt="Foto author" width="48" height="48">
-        <strong>Oleh:</strong> Andi Nugraha
-        • <time datetime="2025-08-20">20 Agustus 2025</time>
-      </p>
-      <p>
-        <strong>Label:</strong>
-        <a href="labels.html">HTML</a>,
-        <a href="labels.html">Dasar</a>,
-        <a href="labels.html">Web</a>
-      </p>
-    </header>
-
-    <section aria-label="Deskripsi">
-      <p>HTML (HyperText Markup Language) adalah bahasa markah standar untuk membuat halaman web. 
-      Dokumen HTML terdiri dari elemen-elemen seperti <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, 
-      <code>&lt;main&gt;</code>, dan <code>&lt;footer&gt;</code> untuk memberi struktur yang semantik.</p>
-      <p>Pada halaman ini, kita menampilkan cover, informasi penulis, tanggal, judul, label, deskripsi, 
-      kemudian form komentar serta daftar komentar.</p>
-    </section>
-  </article>
-
-  <hr>
-
-  <section aria-label="Form Komentar">
-    <h3>Tulis Komentar</h3>
-    <form method="get" action="#daftar-komentar">
-      <p>
-        <label for="nama">Nama</label><br>
-        <input id="nama" name="nama" type="text" required>
-      </p>
-      <p>
-        <label for="foto">URL Foto (opsional)</label><br>
-        <input id="foto" name="foto" type="url" placeholder="https://...">
-      </p>
-      <p>
-        <label for="isi">Komentar</label><br>
-        <textarea id="isi" name="isi" rows="4" required></textarea>
-      </p>
-      <p>
-        <button type="reset">Reset</button>
-        <button type="submit">Kirim</button>
-      </p>
-    </form>
-  </section>
-
-  <hr>
-
-  <section id="daftar-komentar" aria-label="Daftar Komentar">
-    <h3>Komentar (3)</h3>
-
-    <article>
-      <header>
-        <img src="https://via.placeholder.com/36" alt="Foto Budi" width="36" height="36">
-        <strong>Budi Santoso</strong>
-      </header>
-      <p>Penjelasannya mudah dipahami. Terima kasih!</p>
-    </article>
-    <hr>
-    <article>
-      <header>
-        <img src="https://via.placeholder.com/36" alt="Foto Rina" width="36" height="36">
-        <strong>Rina</strong>
-      </header>
-      <p>Bagian tentang elemen semantik sangat membantu.</p>
-    </article>
-    <hr>
-    <article>
-      <header>
-        <img src="https://via.placeholder.com/36" alt="Foto Akbar" width="36" height="36">
-        <strong>Akbar</strong>
-      </header>
-      <p>Mohon contoh penggunaan form lebih banyak lagi.</p>
-    </article>
-  </section>
-</main>
-
-<footer>
-  <hr>
-  <p><a href="index.html">← Kembali ke daftar blog</a></p>
-  <p>&copy; 2025 Blog Sederhana</p>
-</footer>
 </body>
 </html>
